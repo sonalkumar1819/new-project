@@ -1,0 +1,393 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color:black;
+    height: 720px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.main {
+    margin: 0 auto; /* Center the navbar */
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    font-size: 20px;
+    display: inline-block; /* Display list items horizontally */
+    margin: 50px 80px 70px 100px; /* Adjust spacing between list items */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.navbar ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.navbar ul li a:hover{
+    color:darkorange;
+    border-bottom: 5px solid darkorange;
+    transition: ease-in;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+}
+.left-text{
+    text-align: left;
+    position:absolute;
+    top: 40%;
+    margin-left: 120px;
+    font-size: 50px;
+    color: #fff;
+    font-weight:bold ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img{
+    margin-left:73%;
+}
+.img img{
+    height: 550px;
+    margin-left: 45px;
+    margin-top: 11px;
+    width: 85%;
+}
+.hello-text{
+    color: darkorange;
+}
+.webd{
+    border-bottom: 4px solid darkorange;
+    padding-bottom: 20px;
+}
+.name{
+animation-name:name_animation;
+animation-duration: 5s;
+animation-iteration-count:infinite;
+}
+@keyframes name_animation{
+from{color:red}
+to{color:darkorange}
+}
+section{
+    padding: 3rem 0;
+
+}
+section.project{
+    height: 700px;
+    background-color: #fff;
+    border-bottom: 5px solid darkorange;
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation-name: heading-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes heading-animation{
+    25%{}
+    50%{color: red}
+    75%{color: darkorange;}
+}
+.project-image{
+    margin: 20px 0;
+}
+.projects img{
+    width: 29%;
+    height: 250px;
+    margin-top:3%;
+    box-shadow: 10px 10px 8px 10px #727272;
+    border:8px solid rgb(231, 213, 213);
+    margin-left: 44px;
+
+
+}
+.projects img:hover{
+    transform: scale(1.09);
+    animation-name: border-animation;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+@keyframes border-animation{
+    25%{border-bottom: 8px solid darkorange;}
+    50%{border-right: 8px solid darkorange;}
+    75%{border-top: 8px solid darkorange;}
+    100%{border-left: 8px solid darkorange;}
+}
+/* General styles for all screen sizes are here */
+
+/* Media query for devices with a maximum width of 768px (tablets and smaller devices) */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for tablet and smaller devices */
+    .navbar ul li {
+        margin: 10px 20px; /* Adjust the spacing between list items */
+        font-size: 16px; /* Decrease font size for readability on smaller screens */
+    }
+    
+    /* Adjust image size */
+    .img img {
+        height: 300px; /* Adjust the height as needed */
+        width: 100%; /* Make the image take full width of its container */
+        margin-left: 0;
+    }
+
+    /* Other elements */
+    .left-text {
+        margin-left: 20px;
+        font-size: 35px; /* Adjust the font size */
+    }
+
+    /* For the services section */
+    .all-services {
+        grid-template-columns: 1fr; /* Stack all services vertically */
+        grid-column-gap: 0; /* Remove gap */
+    }
+
+    /* For the contact form */
+    .input-box, .message, .send {
+        width: 100%; /* Make inputs full width */
+    }
+
+    /* Adjust button style */
+    .right-text button {
+        width: 100%; /* Make buttons full width */
+        font-size: 18px;
+    }
+}
+
+/* Media query for devices with a maximum width of 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+    /* Adjust styles for mobile devices */
+    .navbar ul li {
+        margin: 5px 10px; /* Adjust the spacing between list items */
+        font-size: 14px; /* Decrease font size for readability on smaller screens */
+    }
+
+    /* Adjust image size */
+    .img img {
+        height: 200px; /* Adjust the height as needed */
+        width: 100%; /* Make the image take full width of its container */
+        margin-left: 0;
+    }
+
+    /* For the contact form */
+    .input-box, .message, .send {
+        width: 100%; /* Make inputs full width */
+    }
+
+    /* Adjust button style */
+    .right-text button {
+        width: 100%; /* Make buttons full width */
+        font-size: 16px;
+    }
+}
+
+.project-title h2{
+    float:left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+}
+.project-title .t1{
+    margin-left: 5%;
+}
+.project-title .t2{
+    margin-left: 9%;
+}
+.project-title .t3{
+    margin-left: 12%;
+}
+section.services{
+    height: 800px;
+    background-color: rgb(17,15,15);
+    border-bottom: 5px solid darkorange;
+}
+.services .heading{
+    color:white
+}
+.all-services{
+    margin:30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:1rem;
+    grid-row-gap: 2rem;
+}
+.all-services .image-grid img{
+    border:8px solid rgb(56,52,52);
+    margin-left: 50px;
+    border-radius: 50px;
+    height: 250px;
+    width: 350px;
+
+}
+.all-services .image-grid img:hover{
+    border: 8px solid white;
+}
+.all-services p{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.all-services .image-grid :hover{
+    transform: translateY(10px);
+    transition: ease-in;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+section.about-me{
+    height: 620px;
+}
+.left-image{
+height: 0;
+}
+.left-image img{
+width: 28%;
+height: 470px;
+margin-top: 4%;
+margin-left: 130px;
+}
+.right-text{
+    margin-left: 40%;
+    text-align: center;
+    margin-top: 10%;
+    line-height: 49px;
+    font-size: 25px;
+}
+.myname{
+    font-size: 50px;
+    color:darkorange;
+}
+.right-text button{
+font-size: 25px;
+font-family: cursive;
+margin-top: 20px 0;
+margin-right: 30px;
+background-color: darkorange;
+border:none;
+}
+.right-text button a{
+    color: black;
+    text-decoration: none;
+
+}
+.right-text button a:hover{
+    background-color:black ;
+    color: darkorange;
+    transition: all 0.3s ease-in;
+}
+.icons{
+    transform: translate(-50%);
+    left: 0;
+    float: right;
+    width: 50px;
+    margin-top: 10%;
+    margin-right: 130px;
+    z-index: 1;
+}
+.icons img{
+    margin-bottom: 20px;
+}
+.icons img:hover{
+    transform:rotate(20deg);
+    transition: ease-in;
+    transition-duration: 0.2s;
+}
+section.contact-me{
+    margin-top: 10%;
+    height: 640px;
+    background-color:rgb(17, 15,15);
+    border-bottom: 5px solid darkorange;
+
+}
+.contact-div .heading{
+    color: white;
+}
+.img1{
+    float:right;
+    margin-right: 550px;
+    margin-bottom: 200px;
+    height: 10px;
+    width: 10px;
+    border-radius: 125px;
+}
+::placeholder{
+    font-size: 20px;
+}
+.form-contact{
+    margin-left: 155px;
+    margin-top: 110px;
+}
+.input-box{
+    width:40%;
+    border:1px solid white;
+    margin:6px 0;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+    background:transparent;
+    outline: none;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300px;
+}
+.message{
+    width:40%;
+    border:1px solid white;
+    margin:6px 0;
+    color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    background:transparent;
+    resize: none;
+    outline: none;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300px;
+    
+}
+.send{
+    width: 40%;
+    border: 1px solid white;
+    margin: 33px 0 11px;
+    height: 32px;
+    padding: 0 10px;
+    font-size: 19px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    outline: none;
+    cursor:point
+}
+.send:hover{
+background-color: #28245b;
+transition: all 0.3s ease-in;
+    };
+    section.footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Change the color as desired */
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .scroll-to-top {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        transition: all 0.3s ease;
+    }
+    
+    .scroll-to-top:hover {
+        transform: scale(1.1);
+    }

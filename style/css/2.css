@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+header {
+    background-color: #333; /* Dark background for header */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.about-me, .education {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.aboutme-div, .education-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heading {
+    color: darkorange;
+}
+
+.left-image img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d; /* Enable 3D transformations */
+}
+
+.left-image:hover img {
+    transform: rotateY(10deg); /* Rotate slightly on hover */
+}
+
+button {
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 20px;
+    background-color: darkorange;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button a {
+    color: black;
+    text-decoration: none;
+}
+ button:hover {
+    background-color: black;
+    color: darkorange;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+    transform: rotate(20deg) scale(1.2);
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.education-content div {
+    flex: 1;
+}
+
+.education-content h3 {
+    color: darkorange;
+}
+
+.education-content p {
+    margin-top: 5px;
+}

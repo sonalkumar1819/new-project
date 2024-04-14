@@ -1,0 +1,218 @@
+<!-- HTML Code -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: darkorange;
+}
+
+.left-text {
+    text-align: left;
+    margin: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.projects {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Services Section */
+.services {
+    padding: 20px;
+}
+
+.all-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact-me {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.input-box, .message, .send {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.send {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.send:hover {
+    background-color: orange;
+}
+
+/* Footer Section */
+.footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-grid,
+    .all-services {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for mobile screens */
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+</style>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="left-text">
+            <h1>Hello, I'm a Web Developer</h1>
+        </div>
+    </header>
+
+    <!-- Main Sections -->
+    <main>
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="heading">Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2 class="heading">Services</h2>
+            <div class="all-services">
+                <div class="service">
+                    <img src="service1.jpg" alt="Service 1">
+                    <p>Service 1</p>
+                </div>
+                <div class="service">
+                    <img src="service2.jpg" alt="Service 2">
+                    <p>Service 2</p>
+                </div>
+                <div class="service">
+                    <img src="service3.jpg" alt="Service 3">
+                    <p>Service 3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-me">
+            <h2 class="heading">Contact Me</h2>
+            <form class="form-contact">
+                <input type="text" class="input-box" placeholder="Your Name" required>
+                <input type="email" class="input-box" placeholder="Your Email" required>
+                <textarea class="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="send">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Web Developer. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+
