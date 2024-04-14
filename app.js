@@ -5,7 +5,7 @@ const { MongoClient } = require('mongodb');
 const path = require('path');
 
 const app = express();
-app.use(express.static("./style"));
+app.use(express.static("."));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 const url = 'mongodb://localhost:27017';
